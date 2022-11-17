@@ -1,6 +1,6 @@
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`🐕🐕🐕 Assertion Passed: ' + ${actual} + ' === ' + ${expected}`);
+    console.log(`🐕🐕🐕 Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🐍🐍🐍 Assertion Failed: ${actual} !==  ${expected}`);
   }
@@ -20,6 +20,7 @@ const countOnly = function(allItems, itemsToCount) {
       }
     }
   }
+  console.log(results);
   return results;
 };
 
@@ -34,6 +35,8 @@ const firstNames = [
   'Fang',
   'Joe'
 ];
+
+
 
 const result1 = countOnly(firstNames, {'Jason': true, 'Karima': true, 'Fang': true, 'Agouhanna': false});
 
