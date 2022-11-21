@@ -1,4 +1,4 @@
-const without = function(source, itemsToRemove) {
+const without = function(source, valuesToRemove) {
   const arrayWithout = [];
   for (const item of source) {
     if (!itemsToRemove.includes(item)) {

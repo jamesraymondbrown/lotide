@@ -12,6 +12,10 @@ const map = require('./map');
 const reverse = require('./reverse');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
+const assertObjectsEqual = require('./assertObjectsEqual');
+const findKeyByValue = requires('./findKeyByValue');
+const eqObjects = require('./eqObjects');
+
 
 
 module.exports = {
@@ -28,5 +32,7 @@ module.exports = {
   map,
   reverse,
   takeUntil,
-  without
+  without,
+  assertObjectsEqual,
+  findKeyByValue
 };
