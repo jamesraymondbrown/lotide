@@ -1,6 +1,6 @@
 const args = process.argv;
 
-let reverser = function (args) {
+const reverse = function (args) {
   let reversedChars = [];
   let newArray = args.slice(2);
     for (let i = 0; i < newArray.length; i++) {
@@ -17,7 +17,7 @@ let reverser = function (args) {
   }
 }
 
-console.log(reverser(process.argv));
+// console.log(reverser(process.argv));
 
 //console.log(args.slice(2, 10));
 
@@ -26,3 +26,5 @@ console.log(reverser(process.argv));
 //for (var j = args[i].length - 1; j >= 0; j--) {
 //  newString += args[i];
 //}
+
+module.exports = reverse; 
